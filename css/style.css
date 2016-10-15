@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*清除默认样式*/
+body,div,ul,h1,h2,h3,p{margin:0; padding:0;}
+li{list-style:none;}
+a{text-decoration:none; }
+
+/*清除浮动*/
+.clearfix{
+	zoom:1;}
+.clearfix:after{
+	display:block;
+	clear:both;
+	content:"";
+	visibility:hidden;
+	height:0;}
+	
+/*浮动*/
+.fl{float:left;}
+	
+/*包裹层*/
+#wrap{width:960px; margin:0 auto; border:1px solid #39c0b2;}
+
+/*头部*/
+header{height:220px; background:#39c0b2 url(../img/border.png) 0 215px  no-repeat ;  }
+header li{float:left; width:290px; margin-top:50px;  }
+.firstLi,.lastLi{width:180px;}
+.lastLi{margin-top:10px;float:right;}
+header h1,header p{ color:#fff;   margin-bottom:10px;}
+header h1{font-size:32px;text-indent:1em;}
+header p{font-size:16px;text-indent:2em;}
+.age,.tel,.github,.address,.email,.blog{padding-left:25px; text-indent:0em;}
+.github,.blog{ font-size:14px;}
+.age{background:url(../img/age1.png) no-repeat; }
+.tel{background:url(../img/tel.png) no-repeat; }
+.github{background:url(../img/tel.png) no-repeat;}
+.address{background:url(../img/address.png) no-repeat; }
+.email{background:url(../img/email.png) no-repeat;}
+.blog{background:url(../img/tel.png) no-repeat; }
+img{height:180px; border:1px solid #CCC;}
+header a{color:#fff;}
+header a:hover{font-weight:bold;}
+
+/*****内容区*******/
+#content{width:860px;  margin:0 auto; padding-top:50px; font-size:16px; color:#523317; position:relative; overflow:hidden;}
+.border{width:100%; height:100%; position:absolute; top:55px; left:170px; border-left:1px dashed #39c0b2; z-index:-1;}
+/*教育背景*/
+.edu{}
+#content ul{float:left;  }
+#content li{ line-height:35px;}
+.edu li, .awards li, .tech li{height:35px; }
+.left{width:150px;}
+.right{width:706px;}
+.left span{display:block;font-size:14px;}
+.right li{padding-left:44px; background:url(../img/dot.png) 10px 9px no-repeat;  }
+#content .firstLi{height:40px; margin-top:8px;}
+#content h2{ margin-top:8px;}
+.edur .firstLi{background:url(../img/edu1.png) no-repeat;}
+.line{display:block;  width:650px;border-bottom:2px solid #39c0b2; height:15px;}
+#content h2{color:#39c0b2;}
+
+/*专业技能*/
+.techr .firstLi{background:url(../img/project.png) no-repeat; }
+
+/*奖项荣誉*/
+.awardsr .firstLi{background:url(../img/awards.png) no-repeat;height:38px; }
+
+/*项目经验*/
+.projectr .firstLi{background:url(../img/project.png) no-repeat;height:38px; }
+.proj1{height:150px;}
+.proj2{height:150px;}
+.proj3{height:150px;}
+.projectr li p{color:#39c0b2; font-weight:bold;  position:relative; display:block;}
+.projectr p span{ position:absolute; top:0; left:500px; }
+.projectr ul li{ background:none; padding:0;}
